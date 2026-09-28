@@ -1,0 +1,60 @@
+# dotnet test 결과 — GM-005
+
+통과!  - 실패:     0, 통과:    54, 건너뜀:     0, 전체:    54, 기간: 28 ms - GM-005.Tests.dll (net9.0)
+
+## 테스트 목록
+
+- GM_005.Tests.MonthTests.유효한_월은_일수를_반환한다(month: 1, expected: 31)
+- GM_005.Tests.MonthTests.유효한_월은_일수를_반환한다(month: 2, expected: 28)
+- GM_005.Tests.MonthTests.유효한_월은_일수를_반환한다(month: 3, expected: 31)
+- GM_005.Tests.MonthTests.유효한_월은_일수를_반환한다(month: 4, expected: 30)
+- GM_005.Tests.MonthTests.유효한_월은_일수를_반환한다(month: 5, expected: 31)
+- GM_005.Tests.MonthTests.유효한_월은_일수를_반환한다(month: 6, expected: 30)
+- GM_005.Tests.MonthTests.유효한_월은_일수를_반환한다(month: 7, expected: 31)
+- GM_005.Tests.MonthTests.유효한_월은_일수를_반환한다(month: 8, expected: 31)
+- GM_005.Tests.MonthTests.유효한_월은_일수를_반환한다(month: 9, expected: 30)
+- GM_005.Tests.MonthTests.유효한_월은_일수를_반환한다(month: 10, expected: 31)
+- GM_005.Tests.MonthTests.유효한_월은_일수를_반환한다(month: 11, expected: 30)
+- GM_005.Tests.MonthTests.유효한_월은_일수를_반환한다(month: 12, expected: 31)
+- GM_005.Tests.MonthTests.범위_밖의_월은_0을_반환한다(month: 0)
+- GM_005.Tests.MonthTests.범위_밖의_월은_0을_반환한다(month: 13)
+- GM_005.Tests.MonthTests.범위_밖의_월은_0을_반환한다(month: -1)
+- GM_005.Tests.MonthTests.범위_밖의_월은_0을_반환한다(month: -5)
+- GM_005.Tests.MonthTests.범위_밖의_월은_0을_반환한다(month: 100)
+- GM_005.Tests.MonthTests.범위_밖의_월은_0을_반환한다(month: 2147483647)
+- GM_005.Tests.MonthTests.범위_밖의_월은_0을_반환한다(month: -2147483648)
+- GM_005.Tests.MonthTests.일년_합계는_365일이다
+- GM_005.Tests.MonthTests.이월은_윤년을_계산하지_않는다
+- GM_005.Tests.RpsTests.이기는_조합은_Win이다(me: Scissors, com: Paper)
+- GM_005.Tests.RpsTests.이기는_조합은_Win이다(me: Rock, com: Scissors)
+- GM_005.Tests.RpsTests.이기는_조합은_Win이다(me: Paper, com: Rock)
+- GM_005.Tests.RpsTests.지는_조합은_Lose이다(me: Scissors, com: Rock)
+- GM_005.Tests.RpsTests.지는_조합은_Lose이다(me: Rock, com: Paper)
+- GM_005.Tests.RpsTests.지는_조합은_Lose이다(me: Paper, com: Scissors)
+- GM_005.Tests.RpsTests.같은_손이면_Draw이다(hand: Scissors)
+- GM_005.Tests.RpsTests.같은_손이면_Draw이다(hand: Rock)
+- GM_005.Tests.RpsTests.같은_손이면_Draw이다(hand: Paper)
+- GM_005.Tests.RpsTests.손_이름을_반환한다(hand: Scissors, expected: "가위")
+- GM_005.Tests.RpsTests.손_이름을_반환한다(hand: Rock, expected: "바위")
+- GM_005.Tests.RpsTests.손_이름을_반환한다(hand: Paper, expected: "보")
+- GM_005.Tests.RpsTests.승리하면_판돈의_3배를_얻는다
+- GM_005.Tests.RpsTests.무승부면_판돈의_5배를_얻는다
+- GM_005.Tests.RpsTests.패배하면_판돈의_7배를_잃는다
+- GM_005.Tests.RpsTests.패배_손실은_소지금을_넘지_않는다(money: 10000, bet: 10000, expectedDelta: -10000)
+- GM_005.Tests.RpsTests.패배_손실은_소지금을_넘지_않는다(money: 5000, bet: 2000, expectedDelta: -5000)
+- GM_005.Tests.RpsTests.패배_손실은_소지금을_넘지_않는다(money: 9000, bet: 1000, expectedDelta: -7000)
+- GM_005.Tests.RpsTests.정산_후_소지금은_음수가_되지_않는다(money: 10000, bet: 10000)
+- GM_005.Tests.RpsTests.정산_후_소지금은_음수가_되지_않는다(money: 5000, bet: 2000)
+- GM_005.Tests.RpsTests.정산_후_소지금은_음수가_되지_않는다(money: 1000, bet: 1000)
+- GM_005.Tests.RpsTests.전액_배팅_후_패배하면_소지금이_0원이_된다
+- GM_005.Tests.RpsTests.유효한_배팅은_통과한다(bet: 1000, money: 10000)
+- GM_005.Tests.RpsTests.유효한_배팅은_통과한다(bet: 5000, money: 10000)
+- GM_005.Tests.RpsTests.유효한_배팅은_통과한다(bet: 10000, money: 10000)
+- GM_005.Tests.RpsTests.최소_금액_미달은_거부된다(bet: 999)
+- GM_005.Tests.RpsTests.최소_금액_미달은_거부된다(bet: 500)
+- GM_005.Tests.RpsTests.최소_금액_미달은_거부된다(bet: 0)
+- GM_005.Tests.RpsTests.최소_금액_미달은_거부된다(bet: -1000)
+- GM_005.Tests.RpsTests.소지금_초과는_거부된다(bet: 10001, money: 10000)
+- GM_005.Tests.RpsTests.소지금_초과는_거부된다(bet: 99999, money: 10000)
+- GM_005.Tests.RpsTests.명세모순_무승부가_승리보다_이득이다
+- GM_005.Tests.RpsTests.명세모순_최소_배팅으로도_두판이면_파산한다
