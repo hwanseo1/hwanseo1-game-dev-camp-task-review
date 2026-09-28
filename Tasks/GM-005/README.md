@@ -9,15 +9,16 @@ C# 콘솔 프로그램 두 개로 구성된 과제. `switch` 중심의 조건문
 
 ## 빌드 · 실행
 
-이 PC에는 .NET SDK가 없어(VS 2022에 `MSBuild\Sdks` 부재) 콘솔 앱 프로젝트를 만들 수 없었다.
-Visual Studio에 포함된 Roslyn 컴파일러를 직접 호출해 빌드했다.
+.NET 9 SDK + Visual Studio 2022. `GM-005.sln`을 VS에서 열면 두 프로젝트가 함께 로드된다.
 
 ```powershell
-$csc = "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn\csc.exe"
+dotnet build GM-005.sln
 
-& $csc -nologo -out:days.exe .\01-days-in-month\Program.cs
-& $csc -nologo -out:rps.exe  .\02-rock-paper-scissors\Program.cs
+dotnet run --project 01-days-in-month
+dotnet run --project 02-rock-paper-scissors        # 시드 지정: -- 1
 ```
+
+> 과제를 처음 풀 때는 이 PC에 .NET SDK가 없어(VS에 .NET 데스크톱 개발 워크로드 미설치) 콘솔 앱 프로젝트를 만들 수 없었고, VS에 딸린 Roslyn `csc.exe`를 직접 호출해 빌드했다. 이후 워크로드를 설치해 표준 프로젝트로 전환했다. 두 방식의 실행 결과는 동일하다.
 
 ---
 

@@ -9,6 +9,7 @@
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
+[Bb]in/
 [Uu]ser[Ss]ettings/
 [Mm]emoryCaptures/
 [Rr]ecordings/
@@ -21,9 +22,11 @@
 .vs/
 .vscode/
 .idea/
-*.csproj
+# Unity가 자동 생성하는 프로젝트 파일만 제외 (손으로 만든 .csproj/.sln은 커밋한다)
+Assembly-CSharp*.csproj
+Assembly-UnityScript*.csproj
+*-Editor.csproj
 *.unityproj
-*.sln
 *.suo
 *.user
 *.userprefs
