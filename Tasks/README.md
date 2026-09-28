@@ -16,6 +16,7 @@ Tasks/
 
 ## 목록
 
-| Task | Unity | 완료 |
+| Task | 내용 | 완료 |
 |---|---|---|
-| | | |
+| [Task-01-days-in-month](Task-01-days-in-month) | 일수 출력기 (콘솔, switch) | O |
+| [Task-02-rock-paper-scissors](Task-02-rock-paper-scissors) | 가위바위보 배팅+치트 (콘솔, switch) | O |
