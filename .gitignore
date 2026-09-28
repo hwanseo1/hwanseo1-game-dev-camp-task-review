@@ -1,0 +1,54 @@
+# ── 로컬 전용 (공개 레포에 올리지 않음) ──
+일지/
+운영/
+
+# ── Unity ──
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Unity Package Manager 로컬 캐시
+/[Aa]ssets/AssetStoreTools*
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# Visual Studio / Rider / VS Code
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# 빌드 산출물
+*.apk
+*.aab
+*.unitypackage
+*.app
+ExportedObj/
+.consulo/
+*.stackdump
+
+# Crashlytics
+crashlytics-build.properties
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
