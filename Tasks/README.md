@@ -16,7 +16,6 @@ Tasks/
 
 ## 목록
 
-| Task | 내용 | 완료 |
+| Task | 내용 | 상태 |
 |---|---|---|
-| [Task-01-days-in-month](Task-01-days-in-month) | 일수 출력기 (콘솔, switch) | O |
-| [Task-02-rock-paper-scissors](Task-02-rock-paper-scissors) | 가위바위보 배팅+치트 (콘솔, switch) | O |
+| [GM-005](GM-005) | 일수 출력기 + 가위바위보(배팅) — C# 콘솔, switch | 치트 기능 미구현 |

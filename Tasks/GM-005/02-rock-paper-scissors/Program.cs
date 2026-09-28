@@ -11,7 +11,8 @@ class Program
     enum Result { Win, Lose, Draw }
 
     static Random rng = new Random();
-    static bool cheat = false;
+
+    // 치트 기능: 요구사항에 이름만 있고 동작 정의가 없어 임의로 만들지 않고 미구현으로 남겼다.
 
     static void Main(string[] args)
     {
@@ -42,11 +43,10 @@ class Program
             int bet = ReadBet(money);
             if (bet == 0) { Console.WriteLine("게임을 중단합니다."); break; }
 
-            Hand com = (Hand)rng.Next(1, 4);
-
             Hand hand;
-            if (!ReadHand(com, out hand)) { Console.WriteLine("게임을 중단합니다."); break; }
+            if (!ReadHand(out hand)) { Console.WriteLine("게임을 중단합니다."); break; }
 
+            Hand com = (Hand)rng.Next(1, 4);
             Console.WriteLine("나: " + Name(hand) + "  vs  컴퓨터: " + Name(com));
 
             // 기본 골격을 switch로 구성 (정산)
@@ -119,12 +119,12 @@ class Program
         }
     }
 
-    // 손 입력. false를 반환하면 중단. 치트(c)는 컴퓨터의 손을 미리 보여준다.
-    static bool ReadHand(Hand com, out Hand hand)
+    // 손 입력. false를 반환하면 중단.
+    static bool ReadHand(out Hand hand)
     {
         while (true)
         {
-            Console.Write("가위(1) 바위(2) 보(3) | 치트(c) 중단(q): ");
+            Console.Write("가위(1) 바위(2) 보(3) | 중단(q): ");
             string s = Console.ReadLine();
             if (s == null) { hand = Hand.Rock; return false; }
 
@@ -133,12 +133,6 @@ class Program
                 case "1": hand = Hand.Scissors; return true;
                 case "2": hand = Hand.Rock;     return true;
                 case "3": hand = Hand.Paper;    return true;
-
-                case "c":
-                    cheat = !cheat;
-                    if (cheat) Console.WriteLine("[치트 ON] 컴퓨터의 손: " + Name(com));
-                    else       Console.WriteLine("[치트 OFF]");
-                    break;
 
                 case "q":
                     hand = Hand.Rock;
