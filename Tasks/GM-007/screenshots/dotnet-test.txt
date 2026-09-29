@@ -1,0 +1,37 @@
+# dotnet test 결과 — GM-007
+
+통과! — 전체 31, 통과 31, 실패 0 (GM-007.Tests.dll, net9.0)
+
+## 테스트 목록
+
+- GM_007.Tests.BattleTests.공격_스킬은_정해진_데미지를_준다(skill: 0, damage: 10)
+- GM_007.Tests.BattleTests.공격_스킬은_정해진_데미지를_준다(skill: 1, damage: 50)
+- GM_007.Tests.BattleTests.기_모으기_턴에는_데미지가_없다
+- GM_007.Tests.BattleTests.기_모으기를_연속으로_쓰면_예외다
+- GM_007.Tests.BattleTests.기_모은_다음_일반_공격은_15_데미지이고_기가_소모된다
+- GM_007.Tests.BattleTests.기가_없을_때는_두_스킬이_모두_무작위로_나온다
+- GM_007.Tests.BattleTests.기를_모은_다음_턴에는_반드시_일반_공격을_고른다
+- GM_007.Tests.BattleTests.명세결함_가로베기가_일반공격보다_항상_낫다
+- GM_007.Tests.BattleTests.명세결함_가로베기만_쓰면_몬스터가_무엇을_하든_플레이어는_죽지_않는다
+- GM_007.Tests.BattleTests.몬스터_공격_데미지_배율(charged: False, crit: False, guarded: False, expected: 10)
+- GM_007.Tests.BattleTests.몬스터_공격_데미지_배율(charged: False, crit: False, guarded: True, expected: 5)
+- GM_007.Tests.BattleTests.몬스터_공격_데미지_배율(charged: False, crit: True, guarded: False, expected: 20)
+- GM_007.Tests.BattleTests.몬스터_공격_데미지_배율(charged: True, crit: False, guarded: False, expected: 15)
+- GM_007.Tests.BattleTests.몬스터_공격_데미지_배율(charged: True, crit: True, guarded: False, expected: 30)
+- GM_007.Tests.BattleTests.몬스터_공격_데미지_배율(charged: True, crit: True, guarded: True, expected: 15)
+- GM_007.Tests.BattleTests.몬스터_체력은_0_아래로_내려가지_않는다
+- GM_007.Tests.BattleTests.무적을_끄면_다시_데미지를_받는다
+- GM_007.Tests.BattleTests.무적이면_데미지를_받지_않는다
+- GM_007.Tests.BattleTests.방어는_그_턴의_몬스터_공격을_절반으로_줄인다
+- GM_007.Tests.BattleTests.방어는_다음_턴까지_이어지지_않는다
+- GM_007.Tests.BattleTests.스킬_번호는_0에서_3까지만_유효하다(skill: -1, expected: False)
+- GM_007.Tests.BattleTests.스킬_번호는_0에서_3까지만_유효하다(skill: 0, expected: True)
+- GM_007.Tests.BattleTests.스킬_번호는_0에서_3까지만_유효하다(skill: 3, expected: True)
+- GM_007.Tests.BattleTests.스킬_번호는_0에서_3까지만_유효하다(skill: 4, expected: False)
+- GM_007.Tests.BattleTests.시작_체력은_플레이어_100_몬스터_200이다
+- GM_007.Tests.BattleTests.즉사_몬스터
+- GM_007.Tests.BattleTests.즉사_플레이어는_무적이어도_적용된다
+- GM_007.Tests.BattleTests.치명타_확률은_대략_20퍼센트다
+- GM_007.Tests.BattleTests.플레이어_스킬은_4개_몬스터_스킬은_2개다
+- GM_007.Tests.BattleTests.플레이어_체력은_0_아래로_내려가지_않고_사망한다
+- GM_007.Tests.BattleTests.회복은_최대_체력을_넘지_않는다
