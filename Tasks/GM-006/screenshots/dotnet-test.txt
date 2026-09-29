@@ -1,0 +1,46 @@
+# dotnet test 결과 — GM-006
+
+통과! — 전체 40, 통과 40, 실패 0 (GM-006.Tests.dll, net9.0)
+
+## 테스트 목록
+
+- GM_006.Tests.BaseballTests.S_B_O의_합은_항상_3이다(a: 1, b: 2, c: 4)
+- GM_006.Tests.BaseballTests.S_B_O의_합은_항상_3이다(a: 3, b: 1, c: 2)
+- GM_006.Tests.BaseballTests.S_B_O의_합은_항상_3이다(a: 3, b: 6, c: 9)
+- GM_006.Tests.BaseballTests.S_B_O의_합은_항상_3이다(a: 9, b: 3, c: 6)
+- GM_006.Tests.BaseballTests.같은_시드면_같은_숫자가_나온다
+- GM_006.Tests.BaseballTests.개수가_3개가_아니면_거부된다(input: "")
+- GM_006.Tests.BaseballTests.개수가_3개가_아니면_거부된다(input: "1 2 3 4")
+- GM_006.Tests.BaseballTests.개수가_3개가_아니면_거부된다(input: "1 2")
+- GM_006.Tests.BaseballTests.개수가_3개가_아니면_거부된다(input: "12")
+- GM_006.Tests.BaseballTests.개수가_3개가_아니면_거부된다(input: "1234")
+- GM_006.Tests.BaseballTests.개수가_3개가_아니면_거부된다(input: null)
+- GM_006.Tests.BaseballTests.결과는_SBO_형식으로_표시된다
+- GM_006.Tests.BaseballTests.명세결함_중복_입력을_허용하면_규칙대로_1S_2B가_나온다
+- GM_006.Tests.BaseballTests.삼스트라이크만_승리다
+- GM_006.Tests.BaseballTests.생성된_숫자는_0에서_9_사이_서로_다른_3개다
+- GM_006.Tests.BaseballTests.생성은_모든_숫자를_모든_자리에_낼_수_있다
+- GM_006.Tests.BaseballTests.숫자가_아니면_거부된다(input: "-12")
+- GM_006.Tests.BaseballTests.숫자가_아니면_거부된다(input: "1 2 x")
+- GM_006.Tests.BaseballTests.숫자가_아니면_거부된다(input: "1,2")
+- GM_006.Tests.BaseballTests.숫자가_아니면_거부된다(input: "a b c")
+- GM_006.Tests.BaseballTests.영이_첫자리에_와도_판정된다
+- GM_006.Tests.BaseballTests.올바른_입력은_숫자_3개가_된다(input: "  3  6 9 ", expected: [3, 6, 9])
+- GM_006.Tests.BaseballTests.올바른_입력은_숫자_3개가_된다(input: "0 5 9", expected: [0, 5, 9])
+- GM_006.Tests.BaseballTests.올바른_입력은_숫자_3개가_된다(input: "1 2 3", expected: [1, 2, 3])
+- GM_006.Tests.BaseballTests.올바른_입력은_숫자_3개가_된다(input: "123", expected: [1, 2, 3])
+- GM_006.Tests.BaseballTests.자리마다_SBO를_판정한다(a: 0, b: 3, c: 6, s: 0, ball: 2, o: 1)
+- GM_006.Tests.BaseballTests.자리마다_SBO를_판정한다(a: 1, b: 2, c: 4, s: 0, ball: 0, o: 3)
+- GM_006.Tests.BaseballTests.자리마다_SBO를_판정한다(a: 3, b: 1, c: 2, s: 1, ball: 0, o: 2)
+- GM_006.Tests.BaseballTests.자리마다_SBO를_판정한다(a: 3, b: 6, c: 0, s: 2, ball: 0, o: 1)
+- GM_006.Tests.BaseballTests.자리마다_SBO를_판정한다(a: 3, b: 6, c: 9, s: 3, ball: 0, o: 0)
+- GM_006.Tests.BaseballTests.자리마다_SBO를_판정한다(a: 3, b: 9, c: 6, s: 1, ball: 2, o: 0)
+- GM_006.Tests.BaseballTests.자리마다_SBO를_판정한다(a: 6, b: 1, c: 2, s: 0, ball: 1, o: 2)
+- GM_006.Tests.BaseballTests.자리마다_SBO를_판정한다(a: 9, b: 3, c: 6, s: 0, ball: 3, o: 0)
+- GM_006.Tests.BaseballTests.자리마다_SBO를_판정한다(a: 9, b: 6, c: 3, s: 1, ball: 2, o: 0)
+- GM_006.Tests.BaseballTests.중복된_숫자는_거부된다(input: "1 1 2")
+- GM_006.Tests.BaseballTests.중복된_숫자는_거부된다(input: "1 2 1")
+- GM_006.Tests.BaseballTests.중복된_숫자는_거부된다(input: "122")
+- GM_006.Tests.BaseballTests.중복된_숫자는_거부된다(input: "3 3 3")
+- GM_006.Tests.BaseballTests.치트_정답에_3_6_9를_입력하면_3S다
+- GM_006.Tests.BaseballTests.치트_정답은_3_6_9다
