@@ -1,0 +1,61 @@
+# dotnet test 결과 — GM-008
+
+통과! — 전체 55, 통과 55, 실패 0 (GM-008.Tests.dll, net9.0)
+
+## 테스트 목록
+
+- GM_008.Tests.GameTests.가운데_카드가_두_장_사이_초과_미만이면_승리(first: 1, second: 13, third: 1, expected: Lose)
+- GM_008.Tests.GameTests.가운데_카드가_두_장_사이_초과_미만이면_승리(first: 1, second: 13, third: 12, expected: Win)
+- GM_008.Tests.GameTests.가운데_카드가_두_장_사이_초과_미만이면_승리(first: 1, second: 13, third: 13, expected: Lose)
+- GM_008.Tests.GameTests.가운데_카드가_두_장_사이_초과_미만이면_승리(first: 1, second: 13, third: 2, expected: Win)
+- GM_008.Tests.GameTests.가운데_카드가_두_장_사이_초과_미만이면_승리(first: 1, second: 13, third: 7, expected: Win)
+- GM_008.Tests.GameTests.가운데_카드가_두_장_사이_초과_미만이면_승리(first: 11, second: 1, third: 13, expected: Lose)
+- GM_008.Tests.GameTests.가운데_카드가_두_장_사이_초과_미만이면_승리(first: 13, second: 4, third: 5, expected: Win)
+- GM_008.Tests.GameTests.가운데_카드가_두_장_사이_초과_미만이면_승리(first: 6, second: 8, third: 3, expected: Lose)
+- GM_008.Tests.GameTests.가운데_카드가_두_장_사이_초과_미만이면_승리(first: 6, second: 8, third: 7, expected: Win)
+- GM_008.Tests.GameTests.가운데_카드가_두_장_사이_초과_미만이면_승리(first: 6, second: 8, third: 9, expected: Lose)
+- GM_008.Tests.GameTests.같은_숫자면_배팅_없이_1000원_차감
+- GM_008.Tests.GameTests.덱은_52장이고_중복이_없다
+- GM_008.Tests.GameTests.명세결함_상시치트와_비용없는_폴드면_같은숫자_판_말고는_돈을_잃지_않는다
+- GM_008.Tests.GameTests.명세결함_소지금이_0원도_아니고_최소배팅도_안_되는_상태가_생긴다
+- GM_008.Tests.GameTests.명세결함_연속된_숫자는_이길_수_있는_카드가_없다
+- GM_008.Tests.GameTests.문양마다_1부터_13까지_13장이다
+- GM_008.Tests.GameTests.문양은_판정에_쓰지_않는다
+- GM_008.Tests.GameTests.배팅_검증(bet: -1000, money: 10000, expected: False)
+- GM_008.Tests.GameTests.배팅_검증(bet: 0, money: 0, expected: False)
+- GM_008.Tests.GameTests.배팅_검증(bet: 0, money: 10000, expected: False)
+- GM_008.Tests.GameTests.배팅_검증(bet: 1000, money: 10000, expected: True)
+- GM_008.Tests.GameTests.배팅_검증(bet: 1000, money: 500, expected: False)
+- GM_008.Tests.GameTests.배팅_검증(bet: 10000, money: 10000, expected: True)
+- GM_008.Tests.GameTests.배팅_검증(bet: 10001, money: 10000, expected: False)
+- GM_008.Tests.GameTests.배팅_검증(bet: 499, money: 500, expected: False)
+- GM_008.Tests.GameTests.배팅_검증(bet: 500, money: 500, expected: True)
+- GM_008.Tests.GameTests.배팅_검증(bet: 999, money: 10000, expected: False)
+- GM_008.Tests.GameTests.셔플해도_52장_구성은_그대로다
+- GM_008.Tests.GameTests.소지금_500원에서_같은_숫자면_0원이_된다
+- GM_008.Tests.GameTests.소지금이_0원이면_더_나누지_않는다
+- GM_008.Tests.GameTests.승리하면_배팅금의_2배를_얻는다
+- GM_008.Tests.GameTests.시드가_같으면_같은_순서로_나온다
+- GM_008.Tests.GameTests.앞_두_장이_같은_숫자면_가운데와_상관없이_Pair(number: 1, third: 13)
+- GM_008.Tests.GameTests.앞_두_장이_같은_숫자면_가운데와_상관없이_Pair(number: 7, third: 5)
+- GM_008.Tests.GameTests.앞_두_장이_같은_숫자면_가운데와_상관없이_Pair(number: 7, third: 7)
+- GM_008.Tests.GameTests.열일곱_판을_마치면_카드_부족으로_끝나고_1장이_남는다
+- GM_008.Tests.GameTests.잘못된_배팅은_예외다
+- GM_008.Tests.GameTests.정산(result: Lose, bet: 3000, money: 10000, delta: -3000)
+- GM_008.Tests.GameTests.정산(result: Pair, bet: 0, money: 10000, delta: -1000)
+- GM_008.Tests.GameTests.정산(result: Pair, bet: 0, money: 500, delta: -500)
+- GM_008.Tests.GameTests.정산(result: Win, bet: 1000, money: 10000, delta: 2000)
+- GM_008.Tests.GameTests.정산(result: Win, bet: 5000, money: 10000, delta: 10000)
+- GM_008.Tests.GameTests.출력_변환(number: 1, text: "A")
+- GM_008.Tests.GameTests.출력_변환(number: 10, text: "10")
+- GM_008.Tests.GameTests.출력_변환(number: 11, text: "J")
+- GM_008.Tests.GameTests.출력_변환(number: 12, text: "Q")
+- GM_008.Tests.GameTests.출력_변환(number: 13, text: "K")
+- GM_008.Tests.GameTests.출력_변환(number: 2, text: "2")
+- GM_008.Tests.GameTests.치트1_다음_판의_가운데_카드를_미리_본다
+- GM_008.Tests.GameTests.치트1_마지막_판에는_다음_판이_없다
+- GM_008.Tests.GameTests.치트2_남은_카드는_이번_판_3장을_뺀_전체다
+- GM_008.Tests.GameTests.카드는_문양과_변환된_숫자로_출력된다
+- GM_008.Tests.GameTests.패배하면_배팅한_만큼_차감된다
+- GM_008.Tests.GameTests.폴드하면_소지금은_그대로이고_카드는_버려진다
+- GM_008.Tests.GameTests.한_판에_3장씩_앞_가운데_뒤_순서로_나눈다
