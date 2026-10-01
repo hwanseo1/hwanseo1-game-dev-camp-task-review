@@ -1,0 +1,41 @@
+# dotnet test 결과 — GM-009
+
+통과! — 전체 35, 통과 35, 실패 0 (GM-009.Tests.dll, net9.0)
+
+## 테스트 목록
+
+- GM_009.Tests.LottoTests.당첨번호는_정렬된_6개이고_보너스는_당첨번호와_겹치지_않는다
+- GM_009.Tests.LottoTests.등수_문구(rank: 0, prefix: "낙첨")
+- GM_009.Tests.LottoTests.등수_문구(rank: 1, prefix: "1등")
+- GM_009.Tests.LottoTests.등수_문구(rank: 2, prefix: "2등")
+- GM_009.Tests.LottoTests.등수_문구(rank: 5, prefix: "5등")
+- GM_009.Tests.LottoTests.명세결함_보너스가_당첨번호와_겹치면_5개만_맞아도_2등이_된다
+- GM_009.Tests.LottoTests.명세결함_자동번호에_중복을_허용하면_한_숫자가_두_번_맞는다
+- GM_009.Tests.LottoTests.범위_밖_숫자는_거부한다(text: "-3")
+- GM_009.Tests.LottoTests.범위_밖_숫자는_거부한다(text: "0")
+- GM_009.Tests.LottoTests.범위_밖_숫자는_거부한다(text: "100")
+- GM_009.Tests.LottoTests.범위_밖_숫자는_거부한다(text: "46")
+- GM_009.Tests.LottoTests.범위_안의_숫자는_통과한다(text: " 23 ", expected: 23)
+- GM_009.Tests.LottoTests.범위_안의_숫자는_통과한다(text: "1", expected: 1)
+- GM_009.Tests.LottoTests.범위_안의_숫자는_통과한다(text: "45", expected: 45)
+- GM_009.Tests.LottoTests.보너스는_2등에서만_쓰인다(mine: [1, 2, 3, 4, 7, ···], expected: 4)
+- GM_009.Tests.LottoTests.보너스는_2등에서만_쓰인다(mine: [1, 2, 3, 7, 44, ···], expected: 5)
+- GM_009.Tests.LottoTests.보너스는_2등에서만_쓰인다(mine: [1, 2, 7, 43, 44, ···], expected: 0)
+- GM_009.Tests.LottoTests.순서가_달라도_같은_등수다
+- GM_009.Tests.LottoTests.숫자_아님_검사가_범위_검사보다_먼저다
+- GM_009.Tests.LottoTests.숫자가_아닌_값은_거부한다(text: "")
+- GM_009.Tests.LottoTests.숫자가_아닌_값은_거부한다(text: "1 2")
+- GM_009.Tests.LottoTests.숫자가_아닌_값은_거부한다(text: "3.5")
+- GM_009.Tests.LottoTests.숫자가_아닌_값은_거부한다(text: "abc")
+- GM_009.Tests.LottoTests.숫자가_아닌_값은_거부한다(text: "칠")
+- GM_009.Tests.LottoTests.숫자가_아닌_값은_거부한다(text: null)
+- GM_009.Tests.LottoTests.이미_고른_숫자는_거부한다
+- GM_009.Tests.LottoTests.일치_개수로_등수를_정한다(mine: [1, 2, 3, 4, 44, ···], expected: 4)
+- GM_009.Tests.LottoTests.일치_개수로_등수를_정한다(mine: [1, 2, 3, 4, 5, ···], expected: 1)
+- GM_009.Tests.LottoTests.일치_개수로_등수를_정한다(mine: [1, 2, 3, 4, 5, ···], expected: 2)
+- GM_009.Tests.LottoTests.일치_개수로_등수를_정한다(mine: [1, 2, 3, 4, 5, ···], expected: 3)
+- GM_009.Tests.LottoTests.일치_개수로_등수를_정한다(mine: [1, 2, 3, 43, 44, ···], expected: 5)
+- GM_009.Tests.LottoTests.일치_개수로_등수를_정한다(mine: [1, 2, 42, 43, 44, ···], expected: 0)
+- GM_009.Tests.LottoTests.일치_개수로_등수를_정한다(mine: [40, 41, 42, 43, 44, ···], expected: 0)
+- GM_009.Tests.LottoTests.자동_번호는_1에서_45_사이_서로_다른_6개다
+- GM_009.Tests.LottoTests.추첨은_1부터_45까지_모든_숫자가_나온다
