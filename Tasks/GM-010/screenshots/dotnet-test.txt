@@ -1,0 +1,33 @@
+# dotnet test 결과 — GM-010
+
+통과! — 전체 27, 통과 27, 실패 0 (GM-010.Tests.dll, net9.0)
+
+## 테스트 목록
+
+- GM_010.Tests.StringRulesTests.명세결함_예시_주민번호는_실제_자릿수와_다르다
+- GM_010.Tests.StringRulesTests.명세결함_예시는_하이픈만이_아니라_공백도_지운다
+- GM_010.Tests.StringRulesTests.명세결함_이모지는_char_단위로_뒤집으면_깨진다
+- GM_010.Tests.StringRulesTests.명세결함_짝수를_0부터_세면_예시와_다르다
+- GM_010.Tests.StringRulesTests.문자열_안의_문자_개수를_센다(text: "", target: 'A', expected: 0)
+- GM_010.Tests.StringRulesTests.문자열_안의_문자_개수를_센다(text: "A B C", target: ' ', expected: 2)
+- GM_010.Tests.StringRulesTests.문자열_안의_문자_개수를_센다(text: "ABCDAA", target: 'A', expected: 3)
+- GM_010.Tests.StringRulesTests.문자열_안의_문자_개수를_센다(text: "ABCDAA", target: 'Z', expected: 0)
+- GM_010.Tests.StringRulesTests.문자열_안의_문자_개수를_센다(text: "ABCDAA", target: 'a', expected: 0)
+- GM_010.Tests.StringRulesTests.문자열을_거꾸로_출력한다(text: "", expected: "")
+- GM_010.Tests.StringRulesTests.문자열을_거꾸로_출력한다(text: "A B", expected: "B A")
+- GM_010.Tests.StringRulesTests.문자열을_거꾸로_출력한다(text: "A", expected: "A")
+- GM_010.Tests.StringRulesTests.문자열을_거꾸로_출력한다(text: "ABCD", expected: "DCBA")
+- GM_010.Tests.StringRulesTests.문자열을_거꾸로_출력한다(text: "안녕하세요", expected: "요세하녕안")
+- GM_010.Tests.StringRulesTests.숫자만_출력한다(text: "2026-10-02", expected: "20261002")
+- GM_010.Tests.StringRulesTests.숫자만_출력한다(text: "A1B2C3", expected: "123")
+- GM_010.Tests.StringRulesTests.숫자만_출력한다(text: "ABC", expected: "")
+- GM_010.Tests.StringRulesTests.숫자만_출력한다(text: "１２3", expected: "3")
+- GM_010.Tests.StringRulesTests.짝수_번째_문자만_거꾸로_한다(text: "", expected: "")
+- GM_010.Tests.StringRulesTests.짝수_번째_문자만_거꾸로_한다(text: "A", expected: "A")
+- GM_010.Tests.StringRulesTests.짝수_번째_문자만_거꾸로_한다(text: "AB", expected: "AB")
+- GM_010.Tests.StringRulesTests.짝수_번째_문자만_거꾸로_한다(text: "ABCDE", expected: "ADCBE")
+- GM_010.Tests.StringRulesTests.짝수_번째_문자만_거꾸로_한다(text: "ABCDEF", expected: "AFCDEB")
+- GM_010.Tests.StringRulesTests.짝수_번째_문자만_거꾸로_한다(text: "ASDF", expected: "AFDS")
+- GM_010.Tests.StringRulesTests.하이픈을_제거한다(text: "--12-3", expected: "123")
+- GM_010.Tests.StringRulesTests.하이픈을_제거한다(text: "900101-1234567", expected: "9001011234567")
+- GM_010.Tests.StringRulesTests.하이픈을_제거한다(text: "9001011234567", expected: "9001011234567")
