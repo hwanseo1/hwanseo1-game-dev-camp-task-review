@@ -1,0 +1,38 @@
+# dotnet test 결과 — GM-012
+
+통과! — 전체 32, 통과 32, 실패 0 (GM-012.Tests.dll, net9.0)
+
+## 테스트 목록
+
+- GM_012.Tests.GameDbTests.Adult_등급은_엘든링과_사이버펑크다
+- GM_012.Tests.GameDbTests.가격은_천_단위_쉼표로_표시한다(price: 0, expected: "0원")
+- GM_012.Tests.GameDbTests.가격은_천_단위_쉼표로_표시한다(price: 1000, expected: "1,000원")
+- GM_012.Tests.GameDbTests.가격은_천_단위_쉼표로_표시한다(price: 64800, expected: "64,800원")
+- GM_012.Tests.GameDbTests.게임은_5개를_코드에서_지정한다
+- GM_012.Tests.GameDbTests.게임은_구조체라_복사본을_바꿔도_원본이_그대로다
+- GM_012.Tests.GameDbTests.다섯_게임의_타이틀은_모두_다르다
+- GM_012.Tests.GameDbTests.등급별_게임_수는_All_1_Teen_2_Adult_2다(rating: Adult, count: 2)
+- GM_012.Tests.GameDbTests.등급별_게임_수는_All_1_Teen_2_Adult_2다(rating: All, count: 1)
+- GM_012.Tests.GameDbTests.등급별_게임_수는_All_1_Teen_2_Adult_2다(rating: Teen, count: 2)
+- GM_012.Tests.GameDbTests.명세결함_평점_만점_기준이_없어_5점_만점이면_9점_이상_조건이_항상_비어_있다
+- GM_012.Tests.GameDbTests.빈_데이터베이스는_빈_결과를_준다
+- GM_012.Tests.GameDbTests.선별해도_원래_순서를_유지하고_원본은_그대로다
+- GM_012.Tests.GameDbTests.이용_등급_세_가지가_모두_쓰인다
+- GM_012.Tests.GameDbTests.조건_세_가지_모두_결과가_있고_전체보다_적다
+- GM_012.Tests.GameDbTests.튜플_항목은_이름으로_꺼낼_수_있다
+- GM_012.Tests.GameDbTests.특이사항_있는_게임은_세_개다
+- GM_012.Tests.GameDbTests.특이사항은_해당하는_것만_표시한다(dlc: False, opt: False, bugs: False, hasAny: False, text: "없음")
+- GM_012.Tests.GameDbTests.특이사항은_해당하는_것만_표시한다(dlc: False, opt: False, bugs: True, hasAny: True, text: "버그 매우 많음")
+- GM_012.Tests.GameDbTests.특이사항은_해당하는_것만_표시한다(dlc: False, opt: True, bugs: False, hasAny: True, text: "최적화 좋지 않다.")
+- GM_012.Tests.GameDbTests.특이사항은_해당하는_것만_표시한다(dlc: True, opt: False, bugs: False, hasAny: True, text: "DLC 곧 나온다.")
+- GM_012.Tests.GameDbTests.특이사항은_해당하는_것만_표시한다(dlc: True, opt: False, bugs: True, hasAny: True, text: "DLC 곧 나온다. / 버그 매우 많음")
+- GM_012.Tests.GameDbTests.특이사항은_해당하는_것만_표시한다(dlc: True, opt: True, bugs: True, hasAny: True, text: "DLC 곧 나온다. / 최적화 좋지 않다. / 버그 매우 많음")
+- GM_012.Tests.GameDbTests.평점_9점_이상은_엘든링과_스타듀밸리다
+- GM_012.Tests.GameDbTests.평점_경계_9점은_포함한다(score: 0, expected: False)
+- GM_012.Tests.GameDbTests.평점_경계_9점은_포함한다(score: 10, expected: True)
+- GM_012.Tests.GameDbTests.평점_경계_9점은_포함한다(score: 8.9000000000000004, expected: False)
+- GM_012.Tests.GameDbTests.평점_경계_9점은_포함한다(score: 9, expected: True)
+- GM_012.Tests.GameDbTests.평점은_0에서_10_사이이고_가격은_양수다
+- GM_012.Tests.GameDbTests.평점은_소수점_한_자리로_표시한다(score: 10, expected: "10.0")
+- GM_012.Tests.GameDbTests.평점은_소수점_한_자리로_표시한다(score: 9, expected: "9.0")
+- GM_012.Tests.GameDbTests.평점은_소수점_한_자리로_표시한다(score: 9.5, expected: "9.5")
