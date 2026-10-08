@@ -11,8 +11,9 @@ Unity 과제: 하루 일과 시뮬레이터 (키 입력 + `for` · `while` · `d
 Unity `6000.3.9f1`, Universal 3D 템플릿(`com.unity.template.3d-cross-platform-17.0.14`)으로 만들었다.
 
 1. Unity Hub → **Add project from disk** → `01-day-simulator` 선택
-2. `Assets/Scenes/SampleScene` 열기 (빈 오브젝트 `DaySimulator`에 스크립트가 붙어 있음)
-3. Play → Game 뷰를 클릭해 포커스 → `Space` / `H` / `B` / `R` → Console 확인
+2. 처음 열 때 URP 머티리얼 업그레이드 창이 뜨면 업그레이드 (반영해서 커밋해 둠)
+3. `Assets/Scenes/SampleScene` 열기 (빈 오브젝트 `DaySimulator`에 스크립트가 붙어 있음)
+4. Play → Game 뷰를 클릭해 포커스 → `Space` / `H` / `B` / `R` → Console 확인
 
 **Active Input Handling을 `Both`로 바꿔 두었다.** Unity 6 템플릿 기본값은 `Input System Package (New)`라서, 샘플 코드의 `Input.GetKeyDown`이 호출될 때마다 `InvalidOperationException`을 던진다 (`screenshots/run-00-legacy-input-error.txt`).
 
