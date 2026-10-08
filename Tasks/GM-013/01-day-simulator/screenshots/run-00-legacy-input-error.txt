@@ -1,0 +1,5 @@
+# Unity 6000.3.9f1, Universal 3D 템플릿(com.unity.template.3d-cross-platform-17.0.14)으로 만든 직후
+# ProjectSettings.asset:
+  activeInputHandler: 1
+# 배치 모드에서 Input.GetKeyDown(KeyCode.Space) 호출 결과:
+GM013 LEGACY INPUT EXCEPTION: InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
