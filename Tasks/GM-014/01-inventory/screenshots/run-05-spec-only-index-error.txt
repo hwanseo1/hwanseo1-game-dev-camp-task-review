@@ -1,0 +1,23 @@
+# 명세 3단계 문장만 따라 만든 PickUp (샘플의 fieldIndex >= Length 검사 없음): G x5 → U → G
+# 임시 스크립트 안에 그대로 옮겨 실행. 제출 코드(InventoryManager.cs)에는 샘플의 검사가 있다
+
+> [G]
+[Log] 물약 → 1번 슬롯
+
+> [G]
+[Log] 녹슨 검 → 2번 슬롯
+
+> [G]
+[Log] 금화 → 3번 슬롯
+
+> [G]
+[Log] 독사과 → 4번 슬롯
+
+> [G]
+[Log] 방패 → 5번 슬롯
+
+> [U]
+[Log] 물약(을)를 사용했습니다!
+
+> [G]
+[Exception] IndexOutOfRangeException: Index was outside the bounds of the array.
