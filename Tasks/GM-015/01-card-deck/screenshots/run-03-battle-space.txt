@@ -1,0 +1,39 @@
+# Space x6 (섞지 않고 연속) → S → Space x2 — 섞지 않으면 같은 0번 카드로 계속 대결 (Random.InitState(7))
+# CardGameManager_Student 메서드를 키 순서대로 호출 (Unity 6000.3.9f1 배치 모드)
+  (인스펙터 Monster Deck: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+> [Space]
+[Log] ⚔️ 내 카드 1 vs 보스 1 → 무승부
+[Log] 다음 판은 S로 셔플하세요.
+
+> [Space]
+[Log] ⚔️ 내 카드 1 vs 보스 1 → 무승부
+[Log] 다음 판은 S로 셔플하세요.
+
+> [Space]
+[Log] ⚔️ 내 카드 1 vs 보스 10 → 패배...
+[Log] 다음 판은 S로 셔플하세요.
+
+> [Space]
+[Log] ⚔️ 내 카드 1 vs 보스 5 → 패배...
+[Log] 다음 판은 S로 셔플하세요.
+
+> [Space]
+[Log] ⚔️ 내 카드 1 vs 보스 5 → 패배...
+[Log] 다음 판은 S로 셔플하세요.
+
+> [Space]
+[Log] ⚔️ 내 카드 1 vs 보스 10 → 패배...
+[Log] 다음 판은 S로 셔플하세요.
+
+> [S]
+[Log] 🔀 덱을 섞습니다! (Fisher-Yates)
+  (인스펙터 Monster Deck: 6, 3, 10, 7, 8, 1, 2, 5, 4, 9)
+
+> [Space]
+[Log] ⚔️ 내 카드 6 vs 보스 2 → 승리!
+[Log] 다음 판은 S로 셔플하세요.
+
+> [Space]
+[Log] ⚔️ 내 카드 6 vs 보스 8 → 패배...
+[Log] 다음 판은 S로 셔플하세요.

@@ -1,0 +1,14 @@
+# 인스펙터에서 Monster Deck 크기를 0으로 바꾼 경우 — W·S는 샘플의 검사로 아무 일 없음, Space는 예외
+# CardGameManager_Student 메서드를 키 순서대로 호출 (Unity 6000.3.9f1 배치 모드)
+  (인스펙터 Monster Deck: )
+
+> [W]
+[Log] 🔁 카드 위치를 교체합니다. (0번 <-> 마지막)
+  (인스펙터 Monster Deck: )
+
+> [S]
+[Log] 🔀 덱을 섞습니다! (Fisher-Yates)
+  (인스펙터 Monster Deck: )
+
+> [Space]
+[Exception] IndexOutOfRangeException: Index was outside the bounds of the array.

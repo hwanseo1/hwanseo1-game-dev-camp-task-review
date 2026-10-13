@@ -1,0 +1,15 @@
+# S x3 — Fisher-Yates 셔플 (Random.InitState(15)로 고정)
+# CardGameManager_Student 메서드를 키 순서대로 호출 (Unity 6000.3.9f1 배치 모드)
+  (인스펙터 Monster Deck: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+> [S]
+[Log] 🔀 덱을 섞습니다! (Fisher-Yates)
+  (인스펙터 Monster Deck: 7, 2, 9, 3, 4, 6, 10, 1, 5, 8)
+
+> [S]
+[Log] 🔀 덱을 섞습니다! (Fisher-Yates)
+  (인스펙터 Monster Deck: 10, 8, 4, 1, 7, 6, 9, 5, 3, 2)
+
+> [S]
+[Log] 🔀 덱을 섞습니다! (Fisher-Yates)
+  (인스펙터 Monster Deck: 3, 5, 6, 10, 9, 2, 4, 7, 1, 8)
