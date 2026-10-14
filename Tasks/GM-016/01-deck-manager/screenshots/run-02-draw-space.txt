@@ -1,0 +1,58 @@
+# Space — 맨 앞 카드 드로우 + RemoveAt(0), 빈 덱에서 한 번 더
+# DeckManager 메서드를 키 순서대로 호출 (Unity 6000.3.9f1 배치 모드)
+[Log] 📋 현재 덱 (10장)
+[Log] 1. 마법사
+[Log] 2. 힐러
+[Log] 3. 용사
+[Log] 4. 슬라임
+[Log] 5. 골렘
+[Log] 6. 도둑
+[Log] 7. 드래곤
+[Log] 8. 암살자
+[Log] 9. 기사
+[Log] 10. 궁수
+  (인스펙터 Player Deck: Count 10 = [마법사, 힐러, 용사, 슬라임, 골렘, 도둑, 드래곤, 암살자, 기사, 궁수])
+
+> [Space]
+[Log] 🃏 드로우: 마법사
+[Log] 남은 카드: 9장
+
+> [Space]
+[Log] 🃏 드로우: 힐러
+[Log] 남은 카드: 8장
+
+> [Space]
+[Log] 🃏 드로우: 용사
+[Log] 남은 카드: 7장
+
+> [Space]
+[Log] 🃏 드로우: 슬라임
+[Log] 남은 카드: 6장
+
+> [Space]
+[Log] 🃏 드로우: 골렘
+[Log] 남은 카드: 5장
+
+> [Space]
+[Log] 🃏 드로우: 도둑
+[Log] 남은 카드: 4장
+
+> [Space]
+[Log] 🃏 드로우: 드래곤
+[Log] 남은 카드: 3장
+
+> [Space]
+[Log] 🃏 드로우: 암살자
+[Log] 남은 카드: 2장
+
+> [Space]
+[Log] 🃏 드로우: 기사
+[Log] 남은 카드: 1장
+
+> [Space]
+[Log] 🃏 드로우: 궁수
+[Log] 남은 카드: 0장
+
+> [Space]
+[Log] 덱이 비었습니다. R로 리필하세요.
+  (인스펙터 Player Deck: Count 0 = [])

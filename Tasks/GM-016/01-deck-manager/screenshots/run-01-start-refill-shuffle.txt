@@ -1,0 +1,22 @@
+# Start — RefillDeck → ShuffleDeck → PrintDeck (Random.InitState(16))
+# DeckManager 메서드를 키 순서대로 호출 (Unity 6000.3.9f1 배치 모드)
+
+> [Start]
+[Log] 📋 현재 덱 (10장)
+[Log] 1. 마법사
+[Log] 2. 힐러
+[Log] 3. 용사
+[Log] 4. 슬라임
+[Log] 5. 골렘
+[Log] 6. 도둑
+[Log] 7. 드래곤
+[Log] 8. 암살자
+[Log] 9. 기사
+[Log] 10. 궁수
+  (인스펙터 Player Deck: Count 10 = [마법사, 힐러, 용사, 슬라임, 골렘, 도둑, 드래곤, 암살자, 기사, 궁수])
+  (도감과 같은 카드 구성인가: True)
+
+## 체크 포인트 — RefillDeck() 후 Count == 10, 셔플 후에도 10
+  (RefillDeck 직후 Count = 10, 순서 = [용사, 마법사, 궁수, 도둑, 기사, 힐러, 드래곤, 슬라임, 골렘, 암살자])
+  (ShuffleDeck 직후 Count = 10)
+  (덱에 카드 12장이 있을 때 RefillDeck → Count = 10 (Clear가 먼저라 항상 10))

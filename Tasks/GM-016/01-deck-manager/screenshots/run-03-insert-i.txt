@@ -1,0 +1,41 @@
+# I — EmergencyHeal을 0번에 Insert, 다음 Space에서 먼저 나오는지
+# DeckManager 메서드를 키 순서대로 호출 (Unity 6000.3.9f1 배치 모드)
+[Log] 📋 현재 덱 (10장)
+[Log] 1. 마법사
+[Log] 2. 힐러
+[Log] 3. 용사
+[Log] 4. 슬라임
+[Log] 5. 골렘
+[Log] 6. 도둑
+[Log] 7. 드래곤
+[Log] 8. 암살자
+[Log] 9. 기사
+[Log] 10. 궁수
+  (인스펙터 Player Deck: Count 10 = [마법사, 힐러, 용사, 슬라임, 골렘, 도둑, 드래곤, 암살자, 기사, 궁수])
+
+> [I]
+[Log] 🚑 EmergencyHeal을 맨 위에 넣었습니다. (10장 → 11장)
+  (인스펙터 Player Deck: Count 11 = [EmergencyHeal, 마법사, 힐러, 용사, 슬라임, 골렘, 도둑, 드래곤, 암살자, 기사, 궁수])
+
+> [Space]
+[Log] 🃏 드로우: EmergencyHeal
+[Log] 남은 카드: 10장
+  (인스펙터 Player Deck: Count 10 = [마법사, 힐러, 용사, 슬라임, 골렘, 도둑, 드래곤, 암살자, 기사, 궁수])
+
+> [I]
+[Log] 🚑 EmergencyHeal을 맨 위에 넣었습니다. (10장 → 11장)
+
+> [I]
+[Log] 🚑 EmergencyHeal을 맨 위에 넣었습니다. (11장 → 12장)
+  (인스펙터 Player Deck: Count 12 = [EmergencyHeal, EmergencyHeal, 마법사, 힐러, 용사, 슬라임, 골렘, 도둑, 드래곤, 암살자, 기사, 궁수])
+
+## 빈 덱에서 I
+  (인스펙터 Player Deck: Count 0 = [])
+
+> [I]
+[Log] 🚑 EmergencyHeal을 맨 위에 넣었습니다. (0장 → 1장)
+
+> [Space]
+[Log] 🃏 드로우: EmergencyHeal
+[Log] 남은 카드: 0장
+  (인스펙터 Player Deck: Count 0 = [])

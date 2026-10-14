@@ -1,0 +1,36 @@
+# B — 슬라임 전부 버리기 (뒤에서 앞으로 for + RemoveAt)
+# DeckManager 메서드를 키 순서대로 호출 (Unity 6000.3.9f1 배치 모드)
+[Log] 📋 현재 덱 (10장)
+[Log] 1. 마법사
+[Log] 2. 힐러
+[Log] 3. 용사
+[Log] 4. 슬라임
+[Log] 5. 골렘
+[Log] 6. 도둑
+[Log] 7. 드래곤
+[Log] 8. 암살자
+[Log] 9. 기사
+[Log] 10. 궁수
+  (인스펙터 Player Deck: Count 10 = [마법사, 힐러, 용사, 슬라임, 골렘, 도둑, 드래곤, 암살자, 기사, 궁수])
+
+> [B]
+[Log] 🗑️ 슬라임 1장 버림 (남은 카드: 9장)
+  (인스펙터 Player Deck: Count 9 = [마법사, 힐러, 용사, 골렘, 도둑, 드래곤, 암살자, 기사, 궁수])
+
+> [B]
+[Log] 🗑️ 슬라임 0장 버림 (남은 카드: 9장)
+  (인스펙터 Player Deck: Count 9 = [마법사, 힐러, 용사, 골렘, 도둑, 드래곤, 암살자, 기사, 궁수])
+
+## 키만으로는 슬라임이 2장 이상이 되지 않는다 — 리필 10장 중 1장, I는 EmergencyHeal만 넣음
+## 체크 포인트(여러 장)를 보려고 덱을 직접 채움 (테스트 전용)
+  (인스펙터 Player Deck: Count 7 = [슬라임, 슬라임, 용사, 슬라임, 기사, 슬라임, 슬라임])
+
+> [B]
+[Log] 🗑️ 슬라임 5장 버림 (남은 카드: 2장)
+  (인스펙터 Player Deck: Count 2 = [용사, 기사])
+
+## 비교: 앞에서 뒤로 for + RemoveAt (같은 덱)
+  (결과 Count 4 = [슬라임, 용사, 기사, 슬라임] → 붙어 있는 슬라임을 건너뜀)
+
+## 비교: foreach 중 Remove (같은 덱)
+  (InvalidOperationException: Collection was modified; enumeration operation may not execute.)
