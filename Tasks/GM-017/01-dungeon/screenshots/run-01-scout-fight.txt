@@ -1,0 +1,42 @@
+# S 정찰(Enqueue) / A 전투(Dequeue) — 빈 대기열 A, S 4번, A 5번
+# 메서드를 키 순서대로 호출 (Unity 6000.3.9f1 배치 모드)
+
+> [A]
+[Log] [전투] 싸울 몬스터가 없습니다. S로 정찰하세요.
+  (monsterQueue(0) = [], travelHistory(0) = [])
+
+> [S]
+[Log] [조우 예고] 저 멀리서 늑대이 나타났습니다!
+  (monsterQueue(1) = [늑대], travelHistory(0) = [])
+
+> [S]
+[Log] [조우 예고] 저 멀리서 늑대이 나타났습니다!
+  (monsterQueue(2) = [늑대, 늑대], travelHistory(0) = [])
+
+> [S]
+[Log] [조우 예고] 저 멀리서 오크이 나타났습니다!
+  (monsterQueue(3) = [늑대, 늑대, 오크], travelHistory(0) = [])
+
+> [S]
+[Log] [조우 예고] 저 멀리서 스켈레톤이 나타났습니다!
+  (monsterQueue(4) = [늑대, 늑대, 오크, 스켈레톤], travelHistory(0) = [])
+
+> [A]
+[Log] [전투] 늑대을 처치했습니다! 남은 적: 3마리
+  (monsterQueue(3) = [늑대, 오크, 스켈레톤], travelHistory(0) = [])
+
+> [A]
+[Log] [전투] 늑대을 처치했습니다! 남은 적: 2마리
+  (monsterQueue(2) = [오크, 스켈레톤], travelHistory(0) = [])
+
+> [A]
+[Log] [전투] 오크을 처치했습니다! 남은 적: 1마리
+  (monsterQueue(1) = [스켈레톤], travelHistory(0) = [])
+
+> [A]
+[Log] [전투] 스켈레톤을 처치했습니다! 남은 적: 0마리
+  (monsterQueue(0) = [], travelHistory(0) = [])
+
+> [A]
+[Log] [전투] 싸울 몬스터가 없습니다. S로 정찰하세요.
+  (monsterQueue(0) = [], travelHistory(0) = [])

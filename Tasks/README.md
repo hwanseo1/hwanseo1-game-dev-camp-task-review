@@ -30,3 +30,4 @@ Tasks/
 | [GM-014](GM-014) | 인벤토리 · 필드 아이템 관리 (확인 · 줍기 · 사용 · 독사과 버리기) — Unity, 배열 순회 · 검색 · break | 완료 (심화 포함, "가방이 가득"은 도달 불가) |
 | [GM-015](GM-015) | 몬스터 카드 덱 매니저 (W Swap · S 셔플 · Space 대결) — Unity, public 배열 · 인스펙터 · Fisher-Yates | 완료 (셔플은 샘플 Fisher-Yates, 명세 방식은 편향) |
 | [GM-016](GM-016) | 카드 배틀 덱 매니저 (Space 드로우 · B 버리기 · I 삽입 · R 리필) — Unity, 배열 → List · while · Fisher-Yates · foreach · RemoveAt/Insert | 완료 (B "여러 장"은 키만으로 도달 불가) |
+| [GM-017](GM-017) | 던전 탐험 (S 정찰 · A 전투 · M 이동 · B 퇴각) + 가중치 드랍 · Undo — Unity, Queue · Stack · Peek · 누적합 | 완료 (Enqueue 위치는 2단계로 옮겨 해석, 심화 키 D/U 정함) |

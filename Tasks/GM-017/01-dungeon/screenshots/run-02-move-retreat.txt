@@ -1,0 +1,48 @@
+# M 이동(Push) / B 퇴각(Pop + Peek) — 입구에서 B, M 3번, B 4번
+# 메서드를 키 순서대로 호출 (Unity 6000.3.9f1 배치 모드)
+
+> [B]
+[Log] 던전 입구까지 돌아왔습니다. 더 이상 퇴각할 수 없습니다.
+  (monsterQueue(0) = [], travelHistory(0) = [])
+
+> [M]
+[Log] [이동] 지하 감옥에 진입했습니다. (총 이동 거리: 1)
+  (monsterQueue(0) = [], travelHistory(1) = [지하 감옥])
+
+> [M]
+[Log] [이동] 무너진 서고에 진입했습니다. (총 이동 거리: 2)
+  (monsterQueue(0) = [], travelHistory(2) = [무너진 서고, 지하 감옥])
+
+> [M]
+[Log] [이동] 보물 창고에 진입했습니다. (총 이동 거리: 3)
+  (monsterQueue(0) = [], travelHistory(3) = [보물 창고, 무너진 서고, 지하 감옥])
+
+> [B]
+[Log] [퇴각] 무너진 서고으로 돌아왔습니다.
+  (monsterQueue(0) = [], travelHistory(2) = [무너진 서고, 지하 감옥])
+
+> [B]
+[Log] [퇴각] 지하 감옥으로 돌아왔습니다.
+  (monsterQueue(0) = [], travelHistory(1) = [지하 감옥])
+
+> [B]
+[Log] 던전 입구까지 돌아왔습니다. 더 이상 퇴각할 수 없습니다.
+  (monsterQueue(0) = [], travelHistory(0) = [])
+
+> [B]
+[Log] 던전 입구까지 돌아왔습니다. 더 이상 퇴각할 수 없습니다.
+  (monsterQueue(0) = [], travelHistory(0) = [])
+
+# 이어서 M 2번 → B 1번 (중간에 되돌아간 뒤 다시 들어가도 경로가 맞는지)
+
+> [M]
+[Log] [이동] 무너진 서고에 진입했습니다. (총 이동 거리: 1)
+  (monsterQueue(0) = [], travelHistory(1) = [무너진 서고])
+
+> [M]
+[Log] [이동] 횃불의 방에 진입했습니다. (총 이동 거리: 2)
+  (monsterQueue(0) = [], travelHistory(2) = [횃불의 방, 무너진 서고])
+
+> [B]
+[Log] [퇴각] 무너진 서고으로 돌아왔습니다.
+  (monsterQueue(0) = [], travelHistory(1) = [무너진 서고])
