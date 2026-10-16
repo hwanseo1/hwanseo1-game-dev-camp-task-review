@@ -31,3 +31,4 @@ Tasks/
 | [GM-015](GM-015) | 몬스터 카드 덱 매니저 (W Swap · S 셔플 · Space 대결) — Unity, public 배열 · 인스펙터 · Fisher-Yates | 완료 (셔플은 샘플 Fisher-Yates, 명세 방식은 편향) |
 | [GM-016](GM-016) | 카드 배틀 덱 매니저 (Space 드로우 · B 버리기 · I 삽입 · R 리필) — Unity, 배열 → List · while · Fisher-Yates · foreach · RemoveAt/Insert | 완료 (B "여러 장"은 키만으로 도달 불가) |
 | [GM-017](GM-017) | 던전 탐험 (S 정찰 · A 전투 · M 이동 · B 퇴각) + 가중치 드랍 · Undo — Unity, Queue · Stack · Peek · 누적합 | 완료 (Enqueue 위치는 2단계로 옮겨 해석, 심화 키 D/U 정함) |
+| [GM-018](GM-018) | 대장장이 무기 (Q struct 복사 · W class 공유 · E null 후 GC) + 몬스터 템플릿 Clone — Unity, 값 타입 · 참조 타입 · Deep Copy | 완료 (선택형 키 R 정함, 템플릿에 name 추가) |

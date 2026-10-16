@@ -1,0 +1,7 @@
+# 씬 구성 (SampleScene 루트 오브젝트)
+
+- Main Camera: Transform, Camera, AudioListener, UniversalAdditionalCameraData
+- Directional Light: Transform, Light, UniversalAdditionalLightData
+- Global Volume: Transform, Volume
+- Blacksmith: Transform, Blacksmith
+- MonsterSpawner: Transform, MonsterSpawner

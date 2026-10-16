@@ -1,0 +1,14 @@
+# 비교 — 얕은 복사(List 그대로 대입)였다면
+# 커밋 코드에는 없는 Clone. 같은 시나리오를 돌려 버그 재현
+
+
+> List 그대로 대입
+  원본 HP 1000, 스킬 배율 9.9배 / 인스턴스1 HP 500, 스킬 배율 9.9배
+  같은 List?: True / 같은 SkillSet?: True
+
+> 새 List + 같은 SkillSet 객체 담기
+  원본 HP 1000, 스킬 배율 9.9배 / 인스턴스1 HP 500, 스킬 배율 9.9배
+  같은 List?: False / 같은 SkillSet?: True
+
+> Clone() (커밋 코드)
+  같은 List?: False / 같은 SkillSet?: False
