@@ -32,3 +32,4 @@ Tasks/
 | [GM-016](GM-016) | 카드 배틀 덱 매니저 (Space 드로우 · B 버리기 · I 삽입 · R 리필) — Unity, 배열 → List · while · Fisher-Yates · foreach · RemoveAt/Insert | 완료 (B "여러 장"은 키만으로 도달 불가) |
 | [GM-017](GM-017) | 던전 탐험 (S 정찰 · A 전투 · M 이동 · B 퇴각) + 가중치 드랍 · Undo — Unity, Queue · Stack · Peek · 누적합 | 완료 (Enqueue 위치는 2단계로 옮겨 해석, 심화 키 D/U 정함) |
 | [GM-018](GM-018) | 대장장이 무기 (Q struct 복사 · W class 공유 · E null 후 GC) + 몬스터 템플릿 Clone — Unity, 값 타입 · 참조 타입 · Deep Copy | 완료 (선택형 키 R 정함, 템플릿에 name 추가) |
+| [GM-020](GM-020) | 판타지 마을 번영도 (집 · 시장 · 공원 인접 보너스, 총 번영도) — C# 콘솔, 상속 · 추상 클래스 · 오버라이드 · 2차원 배열 | 완료 (계산 함수에 위치 · 그리드 인자 추가) |

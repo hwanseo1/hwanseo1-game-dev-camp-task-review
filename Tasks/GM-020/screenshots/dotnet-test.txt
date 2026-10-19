@@ -1,0 +1,55 @@
+# dotnet test 결과 — GM-020
+
+통과! — 전체 49, 통과 49, 실패 0 (GM-020.Tests.dll, net9.0)
+
+## 테스트 목록
+
+- GM_020.Tests.ProsperityTests.가장자리_칸에서도_마을_밖은_건너뛰고_계산한다(row: 0, col: 0)
+- GM_020.Tests.ProsperityTests.가장자리_칸에서도_마을_밖은_건너뛰고_계산한다(row: 0, col: 2)
+- GM_020.Tests.ProsperityTests.가장자리_칸에서도_마을_밖은_건너뛰고_계산한다(row: 0, col: 4)
+- GM_020.Tests.ProsperityTests.가장자리_칸에서도_마을_밖은_건너뛰고_계산한다(row: 2, col: 4)
+- GM_020.Tests.ProsperityTests.가장자리_칸에서도_마을_밖은_건너뛰고_계산한다(row: 4, col: 0)
+- GM_020.Tests.ProsperityTests.가장자리_칸에서도_마을_밖은_건너뛰고_계산한다(row: 4, col: 4)
+- GM_020.Tests.ProsperityTests.공원은_다른_공원에게_보너스를_주지_않는다
+- GM_020.Tests.ProsperityTests.공원은_주변과_상관없이_항상_0이다(rows: ["...", ".P.", "..."])
+- GM_020.Tests.ProsperityTests.공원은_주변과_상관없이_항상_0이다(rows: ["HMH", "MPM", "HPH"])
+- GM_020.Tests.ProsperityTests.관리자는_종류를_묻지_않아_새_건물도_고치지_않고_합산한다
+- GM_020.Tests.ProsperityTests.마을은_5x5_Building_2차원_배열이다
+- GM_020.Tests.ProsperityTests.명세_예시_마을은_집_25_시장_35_공원_0_합계_60이다
+- GM_020.Tests.ProsperityTests.명세결함_인자_없는_GetDailyProsperity로는_같은_건물이라도_칸마다_값이_달라_위치를_넘겨야_한다
+- GM_020.Tests.ProsperityTests.부모_클래스의_계산_함수는_추상이라_자식이_반드시_구현한다
+- GM_020.Tests.ProsperityTests.빈_마을의_총_번영도는_0이다
+- GM_020.Tests.ProsperityTests.세_건물은_Building을_상속하고_GetDailyProsperity를_스스로_오버라이드한다(type: typeof(VillageProsperity.House))
+- GM_020.Tests.ProsperityTests.세_건물은_Building을_상속하고_GetDailyProsperity를_스스로_오버라이드한다(type: typeof(VillageProsperity.Market))
+- GM_020.Tests.ProsperityTests.세_건물은_Building을_상속하고_GetDailyProsperity를_스스로_오버라이드한다(type: typeof(VillageProsperity.Park))
+- GM_020.Tests.ProsperityTests.시장_사이에_다른_건물이_있어도_물류_보너스는_그대로다
+- GM_020.Tests.ProsperityTests.시장은_같은_열에_다른_시장이_있으면_기본이_35다_떨어져_있어도
+- GM_020.Tests.ProsperityTests.시장은_같은_행에_다른_시장이_있으면_기본이_35다_떨어져_있어도
+- GM_020.Tests.ProsperityTests.시장은_대각선에만_다른_시장이_있으면_물류_보너스가_없다
+- GM_020.Tests.ProsperityTests.시장은_인접_4방향의_집_하나당_10을_더한다(rows: [".H.", ".M.", "..."], expected: 30)
+- GM_020.Tests.ProsperityTests.시장은_인접_4방향의_집_하나당_10을_더한다(rows: [".H.", "HMH", ".H."], expected: 60)
+- GM_020.Tests.ProsperityTests.시장은_인접_4방향의_집_하나당_10을_더한다(rows: ["H.H", ".M.", "H.H"], expected: 20)
+- GM_020.Tests.ProsperityTests.시장은_인접_8방향의_공원_하나당_5를_더한다(rows: ["P..", ".M.", "..."], expected: 25)
+- GM_020.Tests.ProsperityTests.시장은_인접_8방향의_공원_하나당_5를_더한다(rows: ["PPP", "PMP", "PPP"], expected: 60)
+- GM_020.Tests.ProsperityTests.시장의_보너스는_바뀐_기본_35_위에_더해진다
+- GM_020.Tests.ProsperityTests.예시_마을은_물류_보너스가_있는_시장과_없는_시장을_모두_가진다
+- GM_020.Tests.ProsperityTests.예시_마을의_칸별_번영도는_손으로_계산한_값과_같다
+- GM_020.Tests.ProsperityTests.이름과_기본_번영도는_집_10_시장_20_공원_0이다
+- GM_020.Tests.ProsperityTests.집은_대각선의_시장에서는_보너스를_받지_않는다
+- GM_020.Tests.ProsperityTests.집은_대각선의_집에서는_보너스를_받지_않는다
+- GM_020.Tests.ProsperityTests.집은_두_칸_떨어진_공원에서는_보너스를_받지_않는다
+- GM_020.Tests.ProsperityTests.집은_인접_4방향에_시장이_있으면_10을_더한다
+- GM_020.Tests.ProsperityTests.집은_인접_4방향의_집_하나당_5를_더한다(rows: [".H.", ".H.", "..."], expected: 15)
+- GM_020.Tests.ProsperityTests.집은_인접_4방향의_집_하나당_5를_더한다(rows: [".H.", "HH.", "..."], expected: 20)
+- GM_020.Tests.ProsperityTests.집은_인접_4방향의_집_하나당_5를_더한다(rows: [".H.", "HHH", "..."], expected: 25)
+- GM_020.Tests.ProsperityTests.집은_인접_4방향의_집_하나당_5를_더한다(rows: [".H.", "HHH", ".H."], expected: 30)
+- GM_020.Tests.ProsperityTests.집은_인접_8방향의_공원_하나당_5를_더한다(rows: [".P.", ".H.", "..."], expected: 15)
+- GM_020.Tests.ProsperityTests.집은_인접_8방향의_공원_하나당_5를_더한다(rows: ["P..", ".H.", "..."], expected: 15)
+- GM_020.Tests.ProsperityTests.집은_인접_8방향의_공원_하나당_5를_더한다(rows: ["P.P", ".H.", "P.P"], expected: 30)
+- GM_020.Tests.ProsperityTests.집은_인접_8방향의_공원_하나당_5를_더한다(rows: ["PPP", "PHP", "PPP"], expected: 50)
+- GM_020.Tests.ProsperityTests.집의_규칙_세_가지는_함께_더해진다
+- GM_020.Tests.ProsperityTests.집의_시장_보너스는_시장이_여러_개여도_한_번이다
+- GM_020.Tests.ProsperityTests.총_번영도를_계산해도_마을_배열은_바뀌지_않는다
+- GM_020.Tests.ProsperityTests.행과_열_모두에_시장이_있어도_기본은_35_한_번이다
+- GM_020.Tests.ProsperityTests.혼자_있는_시장은_20이다
+- GM_020.Tests.ProsperityTests.혼자_있는_집은_10이다
