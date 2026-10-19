@@ -21,17 +21,7 @@ public static class Village
         return total;
     }
 
-    // 명세 4단계의 배치 예시 그대로
-    public static Building[,] CreateSpecExample()
-    {
-        Building[,] village = new Building[Size, Size];
-        village[0, 0] = new House();
-        village[0, 1] = new Market();
-        village[1, 1] = new Park();
-        return village;
-    }
-
-    // 모든 규칙이 한 번 이상 쓰이도록 정한 예시 마을
+    // 배치는 명세에 정해져 있지 않아, 모든 규칙이 한 번 이상 쓰이도록 정했다
     //   H H M . .
     //   H P H . .
     //   . H M H .

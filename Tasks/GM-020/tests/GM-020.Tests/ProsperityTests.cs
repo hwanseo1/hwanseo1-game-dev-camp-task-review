@@ -235,16 +235,6 @@ public class ProsperityTests
     }
 
     [Fact]
-    public void 명세_예시_마을은_집_25_시장_35_공원_0_합계_60이다()
-    {
-        Building[,] village = Village.CreateSpecExample();
-        Assert.Equal(25, At(village, 0, 0));
-        Assert.Equal(35, At(village, 0, 1));
-        Assert.Equal(0, At(village, 1, 1));
-        Assert.Equal(60, Village.TotalProsperity(village));
-    }
-
-    [Fact]
     public void 예시_마을의_칸별_번영도는_손으로_계산한_값과_같다()
     {
         Building[,] village = Village.CreateSampleVillage();

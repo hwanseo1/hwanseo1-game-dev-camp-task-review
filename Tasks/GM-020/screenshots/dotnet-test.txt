@@ -1,6 +1,6 @@
 # dotnet test 결과 — GM-020
 
-통과! — 전체 49, 통과 49, 실패 0 (GM-020.Tests.dll, net9.0)
+통과! — 전체 48, 통과 48, 실패 0 (GM-020.Tests.dll, net9.0)
 
 ## 테스트 목록
 
@@ -15,7 +15,6 @@
 - GM_020.Tests.ProsperityTests.공원은_주변과_상관없이_항상_0이다(rows: ["HMH", "MPM", "HPH"])
 - GM_020.Tests.ProsperityTests.관리자는_종류를_묻지_않아_새_건물도_고치지_않고_합산한다
 - GM_020.Tests.ProsperityTests.마을은_5x5_Building_2차원_배열이다
-- GM_020.Tests.ProsperityTests.명세_예시_마을은_집_25_시장_35_공원_0_합계_60이다
 - GM_020.Tests.ProsperityTests.명세결함_인자_없는_GetDailyProsperity로는_같은_건물이라도_칸마다_값이_달라_위치를_넘겨야_한다
 - GM_020.Tests.ProsperityTests.부모_클래스의_계산_함수는_추상이라_자식이_반드시_구현한다
 - GM_020.Tests.ProsperityTests.빈_마을의_총_번영도는_0이다

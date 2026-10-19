@@ -4,8 +4,7 @@ using VillageProsperity;
 
 Console.OutputEncoding = Encoding.UTF8;
 
-Report("명세 예시 마을", Village.CreateSpecExample());
-Report("예시 마을", Village.CreateSampleVillage());
+Report("마을", Village.CreateSampleVillage());
 
 // 지도 · 건물별 번영도 · 총 번영도를 출력한다.
 static void Report(string title, Building[,] village)
