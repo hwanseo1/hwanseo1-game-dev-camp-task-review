@@ -1,0 +1,11 @@
+# 씬 구성 (SampleScene 루트 오브젝트)
+
+- Main Camera: Transform, Camera, AudioListener, UniversalAdditionalCameraData
+- Directional Light: Transform, Light, UniversalAdditionalLightData
+- Global Volume: Transform, Volume
+- SwitchGame: Transform, SwitchGame
+- Switch1: Transform, MeshFilter, BoxCollider, MeshRenderer / 위치 (-2.50, 0.00, 0.00)
+- Switch2: Transform, MeshFilter, BoxCollider, MeshRenderer / 위치 (0.00, 0.00, 0.00)
+- Switch3: Transform, MeshFilter, BoxCollider, MeshRenderer / 위치 (2.50, 0.00, 0.00)
+
+SwitchGame.switches = [Switch1, Switch2, Switch3], lineStart (0.00, -2.00, 0.00), totalRounds 10, resultDelay 1

@@ -1,0 +1,5 @@
+# Random.Range(int, int) 분포 (각 30000번, Random.InitState(1))
+
+Random.Range(0, 3) → 0: 9854, 1: 10181, 2: 9965
+Random.Range(1, 3) → 1: 15011, 2: 14989
+Random.Range(1, 4) → 1: 9854, 2: 10181, 3: 9965
