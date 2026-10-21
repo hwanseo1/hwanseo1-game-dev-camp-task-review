@@ -1,0 +1,8 @@
+# 씬 구성 (SampleScene 루트 오브젝트)
+
+- Main Camera: Transform, Camera, AudioListener, UniversalAdditionalCameraData
+- Directional Light: Transform, Light, UniversalAdditionalLightData
+- Global Volume: Transform, Volume
+- Player: Transform, MeshFilter, BoxCollider, MeshRenderer, OverheatPlayer / 위치 (0.00, 0.00, 0.00) / 크기 (1.00, 1.00, 1.00)
+
+OverheatPlayer: heatUpSpeed 40/s, coolDownSpeed 30/s, overheat 80, release 20, delay 2s, maxScaleBonus 0.5, shake ±8°
