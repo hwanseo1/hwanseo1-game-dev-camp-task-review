@@ -34,3 +34,5 @@ Tasks/
 | [GM-018](GM-018) | 대장장이 무기 (Q struct 복사 · W class 공유 · E null 후 GC) + 몬스터 템플릿 Clone — Unity, 값 타입 · 참조 타입 · Deep Copy | 완료 (선택형 키 R 정함, 템플릿에 name 추가) |
 | [GM-020](GM-020) | 판타지 마을 번영도 (집 · 시장 · 공원 인접 보너스, 총 번영도) — C# 콘솔, 상속 · 추상 클래스 · 오버라이드 · 2차원 배열 | 완료 (계산 함수에 위치 · 그리드 인자 추가) |
 | [GM-021](GM-021) | 3개 스위치 중 정답 찾기 (1/2/3 선택 · 초록/빨강 · Scene 뷰 라인 · 10라운드 정답률 · C 치트) — Unity, Random.Range · Input.GetKeyDown · material.color · Debug.DrawLine | 완료 (다음 라운드 시점 · 라인 위치 정함) |
+| [GM-022](GM-022) | 과열 시스템 (Space 누름 히트 증가 · 80 과열 2초 지연 · 20 해제 · 색 / 크기 / 흔들림) — Unity, Input.GetKey · Time.deltaTime · Mathf.Clamp | 완료 (증감 속도 · 과열 직후 2초 동작 · 스케일 / 회전 양 정함) |
+| [GM-023](GM-023) | 패턴 기억 게임 (4색 중복 없는 패턴 · 라운드별 1.5 / 1.0 / 0.5초 · 1~4 입력 · 빨강 / 초록 고정 · 3라운드 · 재시작) — Unity, Update + 타이머 · Input.GetKeyDown · material.color | 완료 (성공 후 진행 Space · 실패 = 게임 끝 · 재시작 R / 종료 Esc 정함) |

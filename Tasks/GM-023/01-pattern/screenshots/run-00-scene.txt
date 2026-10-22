@@ -1,0 +1,8 @@
+# 씬 구성 (SampleScene 루트 오브젝트)
+
+- Main Camera: Transform, Camera, AudioListener, UniversalAdditionalCameraData
+- Directional Light: Transform, Light, UniversalAdditionalLightData
+- Global Volume: Transform, Volume
+- PatternCube: Transform, MeshFilter, BoxCollider, MeshRenderer, PatternGame / 위치 (0.00, 0.00, 0.00) / 크기 (1.00, 1.00, 1.00)
+
+PatternGame: 색 유지 시간 1.5 / 1 / 0.5초 (1 / 2 / 3라운드), 입력 대기 색 RGBA(0.500, 0.500, 0.500, 1.000), 패턴 길이 4, 라운드 3
