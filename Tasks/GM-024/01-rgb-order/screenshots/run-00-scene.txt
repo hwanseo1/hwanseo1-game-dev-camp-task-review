@@ -1,0 +1,16 @@
+# 씬 구성 (SampleScene 루트 오브젝트)
+
+- Main Camera: Transform, Camera, AudioListener, UniversalAdditionalCameraData / 위치 (0.00, 1.00, -10.00) / 크기 (1.00, 1.00, 1.00) / 화면 비율 위치 16:9 (x 0.00, y 0.00) · 4:3 (x 0.00, y 0.00)
+- Directional Light: Transform, Light, UniversalAdditionalLightData / 위치 (0.00, 3.00, 0.00) / 크기 (1.00, 1.00, 1.00) / 화면 비율 위치 16:9 (x 0.50, y 0.67) · 4:3 (x 0.50, y 0.67)
+- Global Volume: Transform, Volume / 위치 (0.00, 0.00, 0.00) / 크기 (1.00, 1.00, 1.00) / 화면 비율 위치 16:9 (x 0.50, y 0.41) · 4:3 (x 0.50, y 0.41)
+- TargetCube: Transform, MeshFilter, BoxCollider, MeshRenderer / 위치 (-6.50, 5.00, 0.00) / 크기 (1.50, 1.50, 1.50) / 화면 비율 위치 16:9 (x 0.18, y 0.85) · 4:3 (x 0.08, y 0.85)
+- ChoiceCube1: Transform, MeshFilter, BoxCollider, MeshRenderer / 위치 (-3.00, -1.50, 0.00) / 크기 (2.00, 2.00, 2.00) / 화면 비율 위치 16:9 (x 0.35, y 0.28) · 4:3 (x 0.31, y 0.28)
+- Label1: Transform, MeshRenderer, TextMesh / 위치 (-3.00, 1.50, 0.00) / 크기 (1.00, 1.00, 1.00) / 화면 비율 위치 16:9 (x 0.35, y 0.54) · 4:3 (x 0.31, y 0.54)
+- ChoiceCube2: Transform, MeshFilter, BoxCollider, MeshRenderer / 위치 (0.00, -1.50, 0.00) / 크기 (2.00, 2.00, 2.00) / 화면 비율 위치 16:9 (x 0.50, y 0.28) · 4:3 (x 0.50, y 0.28)
+- Label2: Transform, MeshRenderer, TextMesh / 위치 (0.00, 1.50, 0.00) / 크기 (1.00, 1.00, 1.00) / 화면 비율 위치 16:9 (x 0.50, y 0.54) · 4:3 (x 0.50, y 0.54)
+- ChoiceCube3: Transform, MeshFilter, BoxCollider, MeshRenderer / 위치 (3.00, -1.50, 0.00) / 크기 (2.00, 2.00, 2.00) / 화면 비율 위치 16:9 (x 0.65, y 0.28) · 4:3 (x 0.69, y 0.28)
+- Label3: Transform, MeshRenderer, TextMesh / 위치 (3.00, 1.50, 0.00) / 크기 (1.00, 1.00, 1.00) / 화면 비율 위치 16:9 (x 0.65, y 0.54) · 4:3 (x 0.69, y 0.54)
+- ColorOrderGame: Transform, ColorOrderGame / 위치 (0.00, 0.00, 0.00) / 크기 (1.00, 1.00, 1.00) / 화면 비율 위치 16:9 (x 0.50, y 0.41) · 4:3 (x 0.50, y 0.41)
+
+화면 비율 위치: 카메라 기준 (0,0) = 왼쪽 아래, (1,1) = 오른쪽 위
+ColorOrderGame: targetCube = TargetCube, choiceCubes = ChoiceCube1 / ChoiceCube2 / ChoiceCube3

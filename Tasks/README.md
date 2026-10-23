@@ -36,3 +36,4 @@ Tasks/
 | [GM-021](GM-021) | 3개 스위치 중 정답 찾기 (1/2/3 선택 · 초록/빨강 · Scene 뷰 라인 · 10라운드 정답률 · C 치트) — Unity, Random.Range · Input.GetKeyDown · material.color · Debug.DrawLine | 완료 (다음 라운드 시점 · 라인 위치 정함) |
 | [GM-022](GM-022) | 과열 시스템 (Space 누름 히트 증가 · 80 과열 2초 지연 · 20 해제 · 색 / 크기 / 흔들림) — Unity, Input.GetKey · Time.deltaTime · Mathf.Clamp | 완료 (증감 속도 · 과열 직후 2초 동작 · 스케일 / 회전 양 정함) |
 | [GM-023](GM-023) | 패턴 기억 게임 (4색 중복 없는 패턴 · 라운드별 1.5 / 1.0 / 0.5초 · 1~4 입력 · 빨강 / 초록 고정 · 3라운드 · 재시작) — Unity, Update + 타이머 · Input.GetKeyDown · material.color | 완료 (성공 후 진행 Space · 실패 = 게임 끝 · 재시작 R / 종료 Esc 정함) |
+| [GM-024](GM-024) | R → G → B 순서 맞히기 (왼쪽 위 목표 큐브 · 아래 랜덤 색 큐브 3개 · 1/2/3 선택 · B까지 1점 · 틀리면 R로) — Unity, enum 상태 전이 · Random.Range · Input.GetKeyDown · material.color | 완료 (아래 색 재추첨 시점 · 목표 색 보장 정함, 점수 표시는 Console) |
