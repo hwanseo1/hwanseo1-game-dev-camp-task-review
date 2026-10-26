@@ -1,0 +1,20 @@
+# run-04-data-change: 코드는 그대로, 1번 룸 RoomData 값만 바꿔서 웨이브가 달라지는지
+# (배치 모드 Play. 플레이어는 키 대신 WaveBot이 움직임 · 공격. [t]는 시나리오 시작 후 초)
+
+원래 Room1Data: 스폰 1, HP 3, 공격력 5, 크기 0.7, Agent Small, 속도 2.5
+바꾼 Room1Data (변경): 스폰 4, HP 10, 공격력 20, 크기 1.6, Agent Large, 속도 6
+(1번 룸을 z -40 위치로 복제해 바꾼 데이터를 넣음. 구운 NavMesh는 Small 그대로)
+
+[  0.02] LOG [Room1_Changed] Agent Type이 Large(으)로 바뀌어 NavMesh를 다시 구움
+[  0.02] LOG [Room1_Changed] 웨이브 시작: 4마리 (HP 10, 공격력 20, 속도 6, 크기 1.6, Agent Large)
+[  0.03] Room1_Changed_Monster1: HP 10, 스케일 1.6, Agent Large, speed 6, NavMesh 위 True
+[  0.03] Room1_Changed_Monster2: HP 10, 스케일 1.6, Agent Large, speed 6, NavMesh 위 True
+[  0.03] Room1_Changed_Monster3: HP 10, 스케일 1.6, Agent Large, speed 6, NavMesh 위 True
+[  0.03] Room1_Changed_Monster4: HP 10, 스케일 1.6, Agent Large, speed 6, NavMesh 위 True
+[  1.52] LOG 플레이어 피격 -20 (Room1_Changed_Monster3) → HP 80/100
+[  3.03] LOG 플레이어 피격 -20 (Room1_Changed_Monster3) → HP 60/100
+[  3.03] 3초 동안: 몬스터 최고 속도 6.00 m/s (원래 2.5), 플레이어가 받은 피해 40 (원래 1회 5)
+[  3.03]     Room1_Changed_Monster1 위치 (-2.2, -46.6)
+[  3.03]     Room1_Changed_Monster2 위치 (-1.9, -44.8)
+[  3.03]     Room1_Changed_Monster3 위치 (-3.8, -46.9)
+[  3.03]     Room1_Changed_Monster4 위치 (-3.4, -45.4)

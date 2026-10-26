@@ -1,0 +1,35 @@
+# run-00-layout: 룸 구성 · 룸별 NavMesh
+# (배치 모드 Play. 플레이어는 키 대신 WaveBot이 움직임 · 공격. [t]는 시나리오 시작 후 초)
+
+Room1: 바닥 16x16 (x -8~8, z -8~8), 장애물 2개, 스폰 지점 1개, 데이터 Room1Data
+    Obstacle1: 위치 (-3.0, 1.0) 크기 1.5 x 3.0 x 1.5
+    Obstacle2: 위치 (3.0, -2.0) 크기 1.5 x 3.0 x 1.5
+    NavMeshSurface: Agent Type Small (ID 1001), Collect Objects Children, NavMeshData NavMesh-Room1
+    (0.0, -4.0) 지점에 어떤 타입의 NavMesh가 있나: Small O, Medium X, Large X
+Room2: 바닥 20x20 (x -10~10, z 12~32), 장애물 4개, 스폰 지점 2개, 데이터 Room2Data
+    Obstacle1: 위치 (-2.0, 20.0) 크기 8.0 x 2.0 x 0.6
+    Obstacle2: 위치 (2.0, 26.0) 크기 8.0 x 2.0 x 0.6
+    Obstacle3: 위치 (-6.0, 25.0) 크기 1.5 x 1.5 x 1.5
+    Obstacle4: 위치 (6.0, 17.0) 크기 1.5 x 1.5 x 1.5
+    NavMeshSurface: Agent Type Medium (ID 1002), Collect Objects Children, NavMeshData NavMesh-Room2
+    (0.0, 18.0) 지점에 어떤 타입의 NavMesh가 있나: Small X, Medium O, Large X
+Room3: 바닥 24x24 (x -12~12, z 36~60), 장애물 6개, 스폰 지점 3개, 데이터 Room3Data
+    Obstacle1: 위치 (-4.6, 48.0) 크기 8.0 x 3.0 x 0.6
+    Obstacle2: 위치 (4.6, 48.0) 크기 8.0 x 3.0 x 0.6
+    Obstacle3: 위치 (-7.0, 42.0) 크기 1.5 x 3.0 x 1.5
+    Obstacle4: 위치 (7.0, 42.0) 크기 1.5 x 3.0 x 1.5
+    Obstacle5: 위치 (-4.0, 53.0) 크기 1.5 x 3.0 x 1.5
+    Obstacle6: 위치 (4.0, 53.0) 크기 1.5 x 3.0 x 1.5
+    NavMeshSurface: Agent Type Large (ID 1003), Collect Objects Children, NavMeshData NavMesh-Room3
+    (0.0, 44.0) 지점에 어떤 타입의 NavMesh가 있나: Small X, Medium X, Large O
+Agent Type Small: 반지름 0.35, 높이 1.4, 오르는 높이 0.4
+Agent Type Medium: 반지름 0.5, 높이 2, 오르는 높이 0.4
+Agent Type Large: 반지름 0.8, 높이 3.2, 오르는 높이 0.4
+
+경로 Medium (0.0, 16.0) → (0.0, 28.0): 끝점 NavMesh 있음, 경로 PathComplete
+경로 Medium (0.0, 16.0) → (0.0, -4.0): 끝점 NavMesh 없음, 경로 계산 불가
+경로 Large (0.0, 40.0) → (0.0, 16.0): 끝점 NavMesh 없음, 경로 계산 불가
+
+3번 룸 가운데 벽 틈 확인: (0.0, 45.0) → (0.0, 51.0) (직선 6.0m)
+    Large(룸3 NavMesh): PathComplete, 길이 21.3m, 꺾는 점 5개, 가장 바깥 |x| 9.6
+    Small(같은 룸을 임시로 구움): PathComplete, 길이 6.0m, 꺾는 점 2개, 가장 바깥 |x| 0.0
