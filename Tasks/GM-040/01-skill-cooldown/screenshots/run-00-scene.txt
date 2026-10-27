@@ -1,0 +1,13 @@
+# 씬 구성 (SampleScene 루트 오브젝트)
+
+- Main Camera: Transform, Camera, AudioListener, UniversalAdditionalCameraData
+- Directional Light: Transform, Light, UniversalAdditionalLightData
+- Global Volume: Transform, Volume
+- Player: Transform, MeshFilter, BoxCollider, MeshRenderer, SkillCooldown
+- Canvas: RectTransform, Canvas, CanvasScaler, GraphicRaycaster
+  - CooldownGauge: RectTransform, CanvasRenderer, Image
+    - Fill: RectTransform, CanvasRenderer, Image
+    - Label: RectTransform, CanvasRenderer, Text
+
+SkillCooldown: cooldownTime 5s, readyColor RGBA(1.000, 1.000, 1.000, 1.000), skillColor RGBA(0.200, 0.450, 1.000, 1.000)
+게이지: CooldownGauge(배경 500x36, 화면 아래 가운데) / Fill Image Type Filled, Horizontal, origin Left / Label Text

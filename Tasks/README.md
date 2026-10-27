@@ -38,3 +38,4 @@ Tasks/
 | [GM-023](GM-023) | 패턴 기억 게임 (4색 중복 없는 패턴 · 라운드별 1.5 / 1.0 / 0.5초 · 1~4 입력 · 빨강 / 초록 고정 · 3라운드 · 재시작) — Unity, Update + 타이머 · Input.GetKeyDown · material.color | 완료 (성공 후 진행 Space · 실패 = 게임 끝 · 재시작 R / 종료 Esc 정함) |
 | [GM-024](GM-024) | R → G → B 순서 맞히기 (왼쪽 위 목표 큐브 · 아래 랜덤 색 큐브 3개 · 1/2/3 선택 · B까지 1점 · 틀리면 R로) — Unity, enum 상태 전이 · Random.Range · Input.GetKeyDown · material.color | 완료 (아래 색 재추첨 시점 · 목표 색 보장 정함, 점수 표시는 Console) |
 | [GM-025](GM-025) | 웨이브 맵 (룸 3개 · 적 1/2/3마리 · 처치 시 문 열림 · 룸별 스탯/크기/Agent 차이 · 룸별 NavMesh 3개) — Unity, NavMeshSurface · NavMeshAgent · Agent Type · ScriptableObject · CharacterController | 완료 (처치 방법 · 플레이어 HP · 이동 · 스폰 시점 정함, Agent 세팅 = 룸별 Agent Type으로 해석) |
+| [GM-040](GM-040) | 스킬 쿨타임 (Space 스킬 · 색 변경 · 5초 쿨타임 · 게이지 UI · 초 단위 로그 · C 쿨타임 취소) — Unity, 코루틴 · StopCoroutine · Image.fillAmount · Input.GetKeyDown | 완료 (색 · 되돌림 시점 · 로그 형식 정함, C는 취소만) |
